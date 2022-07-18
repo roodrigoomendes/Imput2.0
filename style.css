@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap%27');
+:root{
+    --grayscale200: #F5F4F6;
+    --grayscale300: #D6D4E2;
+    --grayscale400: #787490;
+    --grayscale900: #18161F;
+    --orange:  #ff5100;
+    font-family: 'Space Grotesk';
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+aside{
+    min-width: 16rem;
+    height: 100vh;
+    border-right:1px solid  var(--grayscale300);
+}
+
+.logo{
+    padding-block:  1.5rem;
+    padding-inline: 3.75rem;
+
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    padding-block: 1rem;
+    border-block:1px solid  var(--grayscale300);
+}
+
+.profile img{
+    width: 40px;
+    height: 40px;
+    margin-left: 24px;
+    border-radius: 50px;
+    border:3px solid var(--orange);
+}
+
+.profileDescription {
+    margin-left: 16px;
+}
+
+.profileDescription h2{
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.profileDescription p{
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--grayscale400);
+}
+
+nav ul li:hover, .active{
+    border-left: 5px solid var(--orange);
+    font-weight: bold;
+}
+
+nav ul li a{
+    display: flex;
+    margin-top: 2.5rem;
+    margin-left: 2.25rem;
+    align-items: center;
+
+}
+
+nav ul li img{
+    margin-right: 1.75rem;
+}
+
+main{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5625rem;
+}
+
+.community{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.Title h5{
+    font-weight: 400;
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+    color: var(--grayscale400);
+}
+
+.Title h3{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--orange);
+}
+
+.communityCards{
+    display: flex;
+}
+
+.cards{
+    width: 16rem;
+    margin-right:10px ;
+    border-radius: 32px 32px;
+}
+
+.cardImage img{
+    width: 16rem;
+    height: 9rem;
+    border-radius: 32px 32px 0px 0px;
+}
+
+.cardDescription{
+    padding-top: 1.0625rem;
+    padding-bottom: 1.1875rem;
+    padding-inline: 1rem;
+    border: 2px solid var(--grayscale300);
+    border-radius:0px 0px 32px 32px ;
+}
+
+.cardDescription h3{
+    font-weight: 700;
+    font-size: 1.4375rem;
+    margin-bottom: 0.75rem;
+}
+
+.cardPerfil img{
+    width: 1.4375rem;
+    margin-right: 0.5rem;
+}
+
+.cardPerfil{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem ;
+}
+
+.cardPerfil p{
+
+    margin-left: 0.25rem;
+    color: var(--grayscale400);
+}
+
+.cardFooter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardFooter div{
+    display: flex;
+}
+
+.cardFooter div img{
+    width: 1.125rem;
+    margin-right: 0.375rem;
+}
+
+.comments{
+    margin-top: 1.25rem;
+
+}
+
+.comment{
+    width: 48.75rem;
+    display: flex;
+    margin-top: 0.5rem;
+    padding-block: 0.75rem;
+    padding-left: 1.75rem;
+    align-items: center;
+    border: 1px solid var(--grayscale300);
+    border-radius: 16px;
+}
+
+.comment img{
+    width: 40px;
+    height: 40px;
+    margin-right: 1.25rem;
+    
+}
+
+.commentDescription div{
+    display: flex;
+    align-items: baseline;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.commentDescription div p{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 0.375rem;
+    color: var(--grayscale400);
+}
+
+.commentDescription p{
+    margin-top:5px;
+
+}
+
+.like{
+    border-radius: 32px 32px 0px 0px;
+}
+
+.commentLike{
+    width: 48.75rem;
+    display: flex ;
+    border: 1px solid var(--grayscale300);
+    border-radius:0px 0px 32px 32px ;
+    padding-block: 0.75rem;
+    padding-left: 1.75rem;
+    background: #e2e2e2;
+}
+
+.commentLike img{
+    padding-left: 1.75rem;
+    width: 50px;
+}
+
+.commentLike p {
+    margin-left: 10px;
+    
+}
+
+strong{
+    font-weight: bold;
+}
+
+.comment:hover , .cards:hover{
+    border: 1px solid var(--orange);
+    background:  #f7e2d8;
+    cursor: pointer;
+}
+
+
+
+
+
